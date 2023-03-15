@@ -5,6 +5,10 @@ import { StoreModule } from '@ngrx/store';
 import { bookReducer } from './store/books.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { BooksEffect } from './store/books.effect';
+import { QuillModule } from 'ngx-quill'
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 import { BooksRoutingModule } from './books-routing.module';
 import { EditorComponent } from './editor/editor.component';
@@ -21,6 +25,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     BooksRoutingModule,
+    QuillModule,
+    MatButtonModule,
+    MatIconModule,
     StoreModule.forFeature('mybooks', bookReducer),
     EffectsModule.forFeature([BooksEffect])
   ]
