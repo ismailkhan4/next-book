@@ -12,10 +12,10 @@
 #### The Next-Book Writing App has a clean and intuitive interface that makes it easy for users to navigate and use. The app is designed to be user-friendly, with simple and straightforward menus and tools that allow users to focus on their writing.
 
 ## How to use
-### Clone this repository.
-### Install the required dependencies using ``` npm install ```
-### Run the app using ``` ng-serve --open ```
-### Visit ``` http://localhost:4200 ``` in your web browser to start using the app.
+1. ### Clone this repository.
+2. ### Install the required dependencies using ``` npm install ```
+3. ### Run the app using ``` ng-serve --open ```
+4. ### Visit ``` http://localhost:4200 ``` in your web browser to start using the app.
 ## Technologies Used
 ### Angular.js 15
 #### Angular.js is a popular JavaScript framework that allows developers to build scalable and dynamic web applications. It provides a robust set of tools and features for building single-page applications, making it an ideal choice for the Next-Book Writing App.
