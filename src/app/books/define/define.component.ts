@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { select, Store } from '@ngrx/store';
+import { selectBooks } from '../store/books.selector';
 
 @Component({
   selector: 'app-define',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./define.component.css']
 })
 export class DefineComponent {
+
+  constructor(private store: Store) {
+  }
+
+  books$ = this.store.pipe(select(selectBooks));
 
 }

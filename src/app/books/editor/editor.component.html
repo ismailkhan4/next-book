@@ -1,3 +1,1 @@
-<quill-editor [(ngModel)]="content" #editor></quill-editor>
-<!-- <button (click)="getContent()">Get Content</button> -->
-<!-- <div [innerHTML]="content"></div> -->
+<quill-editor [(ngModel)]="content" #editor [modules]="quillModules" [ngStyle]="{'border':'2px solid black', 'padding':'1rem'}"></quill-editor>

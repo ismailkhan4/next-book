@@ -1,28 +1,10 @@
-<mat-toolbar>
-  <span>Next-Book</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <a routerLink="/">
-    <mat-icon>home</mat-icon>
-  </a>
-  </button>
-</mat-toolbar>
-<mat-grid-list cols="2" >
-  <mat-grid-tile>
-    <app-editor></app-editor>
-  </mat-grid-tile>
-  <mat-grid-tile>
-  <div class="container">
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Define</mat-card-title>
-  </mat-card-header>
-  <mat-card-actions align="end">
-  </mat-card-actions>
-</mat-card>
-</div>
-  </mat-grid-tile>
-</mat-grid-list>
+<app-layout>
+  <mat-grid-list cols="2" >
+    <mat-grid-tile>
+      <app-editor></app-editor>
+    </mat-grid-tile>
+    <mat-grid-tile>
+    <app-define></app-define>
+    </mat-grid-tile>
+  </mat-grid-list>
+</app-layout>

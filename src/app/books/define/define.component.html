@@ -1,1 +1,29 @@
-<p>define works!</p>
+<div class="container">
+<mat-card>
+  <div *ngFor="let book of books$ | async">
+    <mat-card-content>
+      <section class="mat-typography">
+        <h1>{{book.word}}</h1>
+        <h3>{{book.phonetic}}</h3>
+        <div *ngFor="let meaning of book.meanings">
+          <span><b>{{meaning.partOfSpeech}}</b></span>
+          <p>{{meaning.partOfSpeech}}: {{book.word}}</p>
+          <h3><b>Definition</b></h3>
+          <div *ngFor="let define of meaning.definitions">
+            <h3>{{define.definition}}</h3>
+          </div>
+            <p>
+                <b>synonyms:</b> 
+                <a href="">{{meaning.synonyms}}</a>
+            </p>
+            <p>
+                <b>antonyms:</b> 
+                <a href="">{{meaning.antonyms}}</a>
+            </p>
+        <hr/>
+        </div>
+      </section>
+    </mat-card-content>
+    </div>
+</mat-card >
+</div>
