@@ -1,27 +1,33 @@
-# NextBook
+# Next-Book Writing App
+#### The Next-Book Writing App is a web-based writing application that allows users to create interactive books while also having access to the meanings and full definitions of words. Built using Angular.js 15, Rxjs, and Material UI, this app provides a seamless user experience for both writers and readers.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+## Features
+### Interactive book writing
+#### With the Next-Book Writing App, users can create interactive books by adding links, images, and videos to their text. This allows readers to engage with the content in new and exciting ways, making for a more immersive reading experience.
 
-## Development server
+### Real-time word meaning and definition lookup
+#### One of the key features of the Next-Book Writing App is its real-time word meaning and definition lookup. As users type, the app automatically looks up the meanings and definitions of the words they are using, providing them with a better understanding of the language they are using and helping them to write more effectively. This feature uses the Dictionary API, which provides access to definitions, example sentences, and audio pronunciations for English words.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### User-friendly interface
+#### The Next-Book Writing App has a clean and intuitive interface that makes it easy for users to navigate and use. The app is designed to be user-friendly, with simple and straightforward menus and tools that allow users to focus on their writing.
 
-## Code scaffolding
+## How to use
+### Clone this repository.
+### Install the required dependencies using ``` npm install ```
+### Run the app using ``` ng-serve --open ```
+### Visit ``` http://localhost:4200 ``` in your web browser to start using the app.
+## Technologies Used
+### Angular.js 15
+#### Angular.js is a popular JavaScript framework that allows developers to build scalable and dynamic web applications. It provides a robust set of tools and features for building single-page applications, making it an ideal choice for the Next-Book Writing App.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Rxjs
+#### Rxjs is a library for reactive programming using Observables, making it easier to compose asynchronous or callback-based code.
 
-## Build
+### Material UI
+#### Material UI is a React-based UI library that provides a set of reusable and customizable UI components, making it easy to build responsive and modern web applications.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Dictionary API
+#### The Dictionary API provides access to a large database of English words and their meanings, allowing the Next-Book Writing App to provide real-time word lookups and definitions. The API is free to use and requires no API key or credit card activation.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
