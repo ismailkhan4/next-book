@@ -1,0 +1,16 @@
+#custom_tbar .e-tbar-btn-text{
+    font-size: 18px;
+}
+.ql-toolbar {
+    background-color: #333;
+    color: #fff;
+  }
+  .ql-editor {
+    color: #913030;
+  }
+  .container {
+    border: 2px solid black;
+    height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
