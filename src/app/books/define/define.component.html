@@ -3,7 +3,18 @@
   <div *ngFor="let book of books$ | async">
     <mat-card-content>
       <section class="mat-typography">
-        <h1>{{book.word}}</h1>
+      <mat-grid-list cols="2"  rowHeight="50px" >
+        <mat-grid-tile layout-align="start">
+          <h1>{{book.word}}</h1>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div *ngFor="let phon of book.phonetics">
+            <audio controls *ngIf="phon.audio!==''" style="height:20px">
+              <source src="{{phon.audio}}" type="audio/mpeg">
+            </audio>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
         <h3>{{book.phonetic}}</h3>
         <div *ngFor="let meaning of book.meanings">
           <span><b>{{meaning.partOfSpeech}}</b></span>
