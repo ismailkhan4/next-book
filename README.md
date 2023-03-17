@@ -17,16 +17,16 @@
 3. ### Run the app using ``` ng serve --open ```
 4. ### Visit ``` http://localhost:4200 ``` in your web browser to start using the app.
 ## Technologies Used
-### Angular.js 15
+1. ### Angular.js 15
 #### Angular.js is a popular JavaScript framework that allows developers to build scalable and dynamic web applications. It provides a robust set of tools and features for building single-page applications, making it an ideal choice for the Next-Book Writing App.
 
-### Rxjs
+2. ### Rxjs
 #### Rxjs is a library for reactive programming using Observables, making it easier to compose asynchronous or callback-based code.
 
-### Material UI
+3. ### Material UI
 #### Material UI is a React-based UI library that provides a set of reusable and customizable UI components, making it easy to build responsive and modern web applications.
 
-### Dictionary API
+4. ### Dictionary API
 #### The Dictionary API provides access to a large database of English words and their meanings, allowing the Next-Book Writing App to provide real-time word lookups and definitions. The API is free to use and requires no API key or credit card activation.
 
 
