@@ -14,7 +14,7 @@
 ## How to use
 1. ### Clone this repository.
 2. ### Install the required dependencies using ``` npm install ```
-3. ### Run the app using ``` ng-serve --open ```
+3. ### Run the app using ``` ng serve --open ```
 4. ### Visit ``` http://localhost:4200 ``` in your web browser to start using the app.
 ## Technologies Used
 ### Angular.js 15
