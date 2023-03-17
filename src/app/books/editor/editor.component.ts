@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { QuillEditorComponent } from 'ngx-quill';
 import { invokeBooksAPI } from '../store/books.action';
@@ -17,6 +17,18 @@ export class EditorComponent {
   @ViewChild('editor') editor!: QuillEditorComponent;
   content: any;
   getBooks$?: any;
+
+  @ViewChild('screen') screen!: ElementRef;
+
+  downloadHTML() {
+    const quillEditor = new Quill(this.screen.nativeElement);
+    const htmlContent = quillEditor.root.innerHTML;
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'data:text/html;charset=utf-8,' + encodeURIComponent(htmlContent);
+    downloadLink.download = 'quill-editor-content.html';
+    downloadLink.click();
+  }
 
   constructor(private store: Store) {
     this.content = `
